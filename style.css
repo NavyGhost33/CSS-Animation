@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 30px;
+  width: 90vw;
+  margin: 0 auto;
+  border: 3px solid gray;
+  margin-top: 30px;
+}
+
+.image {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: white;
+}
+
+.image > img {
+  object-position: center;
+}
+
+.description {
+  width: 60%;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.description > p > span:first-child {
+  margin-right: 50px;
+}
+
+.description > p > span:last-child {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.description > p > span:last-child:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.fa-regular,
+.fa-heart {
+  margin-right: 5px;
+  color: red;
+}
+
+.price {
+  width: 15%;
+  text-align: justify;
+  margin-left: 50px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.price > p {
+  margin: 5px 0;
+}
+
+.price > h1 {
+  color: orangered;
+}
+
+.price > button {
+  margin: 5px 0;
+  height: 40px;
+  font-weight: bold;
+}
+
+.price > button:nth-child(4) {
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px gray;
+}
+
+.price > button:last-child {
+  background-color: rgb(38, 214, 38);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px gray;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.price > button:last-child:hover {
+  opacity: 1;
+}
